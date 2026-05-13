@@ -1,6 +1,6 @@
 # crit-vul-2025
 
-simple code-snippet to understand it
+simple code-snippet to understand it , however this attack requires manipulation of off-chain + onchain  to drain the funds
 
 90 million crit tvl hit
 
