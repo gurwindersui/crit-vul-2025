@@ -1,4 +1,7 @@
 # crit-vul-2025
+
+simple code-snippet to understand it
+
 90 million crit tvl hit
 
 ## Vulnerability details  = OFF-CHAIN + ON-CHAIN
@@ -25,7 +28,7 @@ No Authorization Mechanism: Unlike other critical functions in the contract that
 
 No Validation Checks: The function performs no validation on the new sequencer address, allowing transfer to:
 
-Invalid addresses (e.g., @0x0)
+
 Unverified addresses
 Potentially malicious actors
 
