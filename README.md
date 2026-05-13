@@ -74,8 +74,7 @@ No validation prevents transfer to @0x0 or invalid addresses
 
 Recommended Fix
 
-rust
-Copy
+```
 entry fun transfer_ids(
     _: &AdminCap,  // Require admin authorization
     ids: InternalDataStore, 
@@ -99,6 +98,7 @@ entry fun transfer_ids(
     // Perform transfer
     transfer::transfer(ids, new_sequencer);
 }
+```
 Additional Recommendations
 
 Implement Multi-signature: Require multiple admin signatures for critical operations
