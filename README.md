@@ -15,11 +15,12 @@ Unprotected Critical Function
 Validation steps
 he vulnerable function
 
-rust
-Copy
+```
+C
 entry fun transfer_ids(ids: InternalDataStore, sequencer: address) {
     transfer::transfer(ids, sequencer);
 }
+```
 No Authorization Mechanism: Unlike other critical functions in the contract that require AdminCap, this function can be called by any wallet.
 
 No Validation Checks: The function performs no validation on the new sequencer address, allowing transfer to:
