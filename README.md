@@ -37,7 +37,7 @@ create_internal_data_store ✓ Requires AdminCap
 set_operator ✓ Requires AdminCap
 transfer_ids ✗ No protection
 
-Impact Assessment----
+## Impact Assessment----
 
 Complete Exchange Takeover: A compromised sequencer can transfer the IDS to an attacker, giving them full control over:
 
