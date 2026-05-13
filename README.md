@@ -4,9 +4,9 @@
 ## Vulnerability details  = OFF-CHAIN + ON-CHAIN
 The data_store::transfer_ids function in the data_store module allows unrestricted transfer of the Internal Data Store (IDS) ownership without any authorization checks, creating a critical security vulnerability that could compromise the entire exchange.
 
-Severity: CRITICAL
+## Severity: CRITICAL
 
-Vulnerability Type
+
 
 Access Control Bypass
 Missing Authorization Check
@@ -56,17 +56,17 @@ No Recovery Mechanism: Once transferred, there's no way to recover the IDS witho
 
 Attack Scenarios
 
-Scenario 1: Compromised Sequencer
+## Scenario 1: Compromised Sequencer
 
 Calls transfer_ids to transfer IDS to attacker-controlled address
 Gains full control of exchange operations
 
-Scenario 2: Insider Threat
+## Scenario 2: Insider Threat
 
 Malicious sequencer operator transfers IDS before being detected
 No multi-sig or timelock to prevent immediate transfer
 
-Scenario 3: Accidental Transfer
+## Scenario 3: Accidental Transfer
 
 Sequencer accidentally transfers to wrong address
 No validation prevents transfer to @0x0 or invalid addresses
