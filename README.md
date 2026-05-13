@@ -1,7 +1,7 @@
 # crit-vul-2025
 90 million crit tvl hit
 
-Vulnerability details  = OFF-CHAIN + ON-CHAIN
+## Vulnerability details  = OFF-CHAIN + ON-CHAIN
 The data_store::transfer_ids function in the data_store module allows unrestricted transfer of the Internal Data Store (IDS) ownership without any authorization checks, creating a critical security vulnerability that could compromise the entire exchange.
 
 Severity: CRITICAL
